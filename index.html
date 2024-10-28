@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js" defer></script>
+    <title>contact form</title>
+</head>
+<body>
+     <!-- Success Message Container -->
+  <div id="success-message" class="success-message hidden">
+   <div class="message-sent">
+    <img src="assets/images/icon-success-check.svg" alt="">
+    <span>Message Sent!</span>
+   </div>
+    Thanks for completing the form. We will be in touch
+  </div>
+  <div class="container">
+    <div class="header">
+        Contact Us
+    </div>
+    <form action="#" id="form" novalidate>
+        <div class="first-last">
+            <div class="input-box first-name">
+                <label for="first-name">First Name *</label> <br>
+                <input type="text" autocomplete="first-name" id="first-name">
+                <small id="name-instruction"></small>
+            </div>
+            <div class="input-box last-name">
+                <label for="last-name">Last Name *</label> <br>
+                <input type="text" autocomplete="family-name" id="last-name">
+                <small id="name-instruction"></small>
+            </div>
+        </div>
+        <div class="input-box email">
+            <label for="email">Email *</label> <br>
+            <input type="email" id="email" autocomplete="email">
+            <small></small>
+        </div>
+        
+            <label for="query" class="query-label">Query Type *</label>
+            <div class="query">
+                <div class="radio-general-wrapper">
+                    <div class="radio-general ">
+                        <p for="query">General Enquiry</p> 
+                        <input type="radio" name="query-type" id="radio-general">
+                    </div>
+                    <small></small>
+                </div>
+                
+                <div class="radio-support-wrapper">
+                    <div class="radio-support ">
+                        <p for="query">Support Enquiry</p> 
+                        <input type="radio" name="query-type" id="radio-support">
+                    </div>
+                    <small></small>
+                </div>
+               
+            </div>
+       
+       
+        <div class="input-box message-area">
+            <label for="message">Message area *</label> <br>
+            <textarea id="message"></textarea>
+            <small></small>
+        </div>
+     
+
+    <div class="input-box consent-wrapper">
+       <div class="consent">
+            <input type="checkbox"  id="consent-message">
+            <p>I consent to being contacted by the team</p>
+       </div>
+        <small  id="consent-instruction"></small>
+    </div>
+        <button type="submit">Submit</button>
+        
+
+        </div>
+        
+    </form>
+  </div>
+    
+</body>
+</html>
